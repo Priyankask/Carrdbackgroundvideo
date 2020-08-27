@@ -760,8 +760,10 @@
 					else
 						this.$target.style.backgroundImage = 'url(\'' + this.poster + '\')';
 					
-				setTimeout(function(){ alert(this.$video.onplaying); }, 1000);
-								
+						this.$video.onplaying = function() {
+							alert("The video is now playing");
+						};
+						
 			};
 	
 	// Container: container01.
