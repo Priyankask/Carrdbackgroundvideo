@@ -759,7 +759,8 @@
 				// Otherwise, use fallback image.
 					else
 						this.$target.style.backgroundImage = 'url(\'' + this.poster + '\')';
-						
+					
+				setTimeout(function(){ alert(this.$video.onplaying); }, 1000);
 								
 			};
 	
@@ -771,21 +772,5 @@
 			position: 'center',
 			loop: true
 		});
-
-		var video = document.querySelector('video');
-var promise = video.play();
-
-if (promise !== undefined) {
-  promise.then(_ => {
-    // Autoplay started!
-  }).catch(error => {
-	// Show something in the UI that the video is muted
-	alert('hr');
-    video.muted = true;
-    video.play();
-  });
-
-  setTimeout(function(){ alert("Hello"); }, 1000);
-}
 
 })();
