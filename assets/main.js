@@ -759,7 +759,7 @@
 				// Otherwise, use fallback image.
 					else
 						this.$target.style.backgroundImage = 'url(\'' + this.poster + '\')';
-					
+						alert(this.$video.src);alert(typeof this.$video.src);
 						if(!this.$video.src){this.$target.style.backgroundImage = 'url(\'' + this.poster + '\')';}		
 			};
 	
