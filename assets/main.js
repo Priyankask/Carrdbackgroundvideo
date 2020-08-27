@@ -760,7 +760,7 @@
 					else
 						this.$target.style.backgroundImage = 'url(\'' + this.poster + '\')';
 						
-						this.$video.onplaying = function() {alert(this.$video.onplaying);}		
+								
 			};
 	
 	// Container: container01.
@@ -771,5 +771,18 @@
 			position: 'center',
 			loop: true
 		});
+
+		var video = document.querySelector('video');
+var promise = video.play();
+
+if (promise !== undefined) {
+  promise.then(_ => {
+    // Autoplay started!
+  }).catch(error => {
+    // Show something in the UI that the video is muted
+    video.muted = true;
+    video.play();
+  });
+}
 
 })();
