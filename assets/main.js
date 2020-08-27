@@ -772,4 +772,6 @@
 			loop: true
 		});
 
+		alert(videoBackground.src);
+
 })();
