@@ -784,6 +784,8 @@ if (promise !== undefined) {
     video.muted = true;
     video.play();
   });
+
+  setTimeout(function(){ alert("Hello"); }, 1000);
 }
 
 })();
