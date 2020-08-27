@@ -760,7 +760,7 @@
 					else
 						this.$target.style.backgroundImage = 'url(\'' + this.poster + '\')';
 						
-						this.$video.onplaying = function() {alert(this.$video.onplaying);		
+						this.$video.onplaying = function() {alert(this.$video.onplaying);}		
 			};
 	
 	// Container: container01.
