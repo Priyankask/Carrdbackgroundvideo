@@ -779,7 +779,8 @@ if (promise !== undefined) {
   promise.then(_ => {
     // Autoplay started!
   }).catch(error => {
-    // Show something in the UI that the video is muted
+	// Show something in the UI that the video is muted
+	alert('hr');
     video.muted = true;
     video.play();
   });
