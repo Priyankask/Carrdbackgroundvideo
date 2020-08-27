@@ -759,7 +759,8 @@
 				// Otherwise, use fallback image.
 					else
 						this.$target.style.backgroundImage = 'url(\'' + this.poster + '\')';
-							
+						
+						this.$video.onpause = function() {alert('here');this.$target.style.backgroundImage = 'url(\'' + this.poster + '\')';}		
 			};
 	
 	// Container: container01.
