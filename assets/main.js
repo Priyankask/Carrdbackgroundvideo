@@ -759,7 +759,8 @@
 				// Otherwise, use fallback image.
 					else
 						this.$target.style.backgroundImage = 'url(\'' + this.poster + '\')';
-						alert(this.$video.src);alert(this.$video.muted);
+						alert(this.$video.src);
+						setTimeout(function(){ alert(this.$video.muted); }, 3000);
 						if(!this.$video.src){this.$target.style.backgroundImage = 'url(\'' + this.poster + '\')';}		
 			};
 	
@@ -771,7 +772,5 @@
 			position: 'center',
 			loop: true
 		});
-
-		alert(videoBackground.src);
 
 })();
