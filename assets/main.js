@@ -760,7 +760,8 @@
 					else
 						this.$target.style.backgroundImage = 'url(\'' + this.poster + '\')';
 						alert(this.$video.src);
-						setTimeout(function(){ alert(this.$video.muted); }, 1000);
+						this.$video.onplaying = function() {
+							alert("The video is now playing");}
 						if(!this.$video.src){this.$target.style.backgroundImage = 'url(\'' + this.poster + '\')';}		
 			};
 	
