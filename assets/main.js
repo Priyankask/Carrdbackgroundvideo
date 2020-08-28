@@ -677,7 +677,7 @@
 		 * @param {string} id ID.
 		 * @param {object} settings Settings.
 		 */
-		/*function videoBackground(id, settings) {
+		function videoBackground(id, settings) {
 	
 			var _this = this;
 	
@@ -698,7 +698,7 @@
 			 * Determines if the client can autoplay a video.
 			 * @return {bool} True if yes, false if no.
 			 */
-			/*videoBackground.prototype.autoplay = function() {
+			videoBackground.prototype.autoplay = function() {
 	
 				// Not iOS or Android? Ok.
 					if (client.os != 'ios'
@@ -738,7 +738,7 @@
 			/**
 			 * Initializes the vieo background.
 			 */
-			/*videoBackground.prototype.init = function() {
+			videoBackground.prototype.init = function() {
 	
 				// Autoplay allowed? Use <video> element.
 					if (this.autoplay()) {
@@ -769,7 +769,6 @@
 			poster: 'assets/videos/container01.mp4.jpg',
 			position: 'center',
 			loop: true
-		});*/
-		
+		});
 
 })();
